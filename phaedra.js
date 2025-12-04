@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // GitHub button in Creators section
     document.getElementById('githubBtn').addEventListener('click', function() {
-        window.open('https://jd031022.github.io/greatbooks-phaedra/', '_blank');
+        window.open('https://github.com/Jd031022/greatbooks-phaedra, '_blank');
     });
     
     // Print page
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // View source (GitHub)
     document.getElementById('viewSource').addEventListener('click', function() {
-        window.open('https://github.com/Jd031022/greatbooks-phaedra.git', '_blank');
+        window.open('https://github.com/Jd031022/greatbooks-phaedra', '_blank');
     });
     
     // Add some interactive hover effects
