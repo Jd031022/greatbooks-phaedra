@@ -190,14 +190,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Print page
-    
+
     document.getElementById('printPage').addEventListener('click', function() {
         window.print();
     });
     
     // View source (GitHub)
     document.getElementById('viewSource').addEventListener('click', function() {
-        window.open('https://github.com/yourusername/phaedra-literary-archive', '_blank');
+        window.open('https://github.com/Jd031022/greatbooks-phaedra.git', '_blank');
     });
     
     // Add some interactive hover effects
