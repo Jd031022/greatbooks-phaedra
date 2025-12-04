@@ -186,10 +186,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // GitHub button in Creators section
     document.getElementById('githubBtn').addEventListener('click', function() {
-        window.open('https://github.com/Jd031022/greatbooks-phaedra.git', '_blank');
+        window.open('https://jd031022.github.io/greatbooks-phaedra/', '_blank');
     });
     
     // Print page
+    
     document.getElementById('printPage').addEventListener('click', function() {
         window.print();
     });
