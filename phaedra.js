@@ -186,8 +186,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // GitHub button in Creators section
     document.getElementById('githubBtn').addEventListener('click', function() {
-        window.open('https://github.com/Jd031022, '_blank');
+    window.open('https://github.com/Jd031022', '_blank');
     });
+
     
     // Print page
 
@@ -222,7 +223,27 @@ document.addEventListener('DOMContentLoaded', function() {
         "Phaedra is one of only two plays by Racine with a mythological rather than historical subject."
     ];
     
-    // Display a random fact in the console (could be displayed on page if desired)
     console.log("Did you know? " + facts[Math.floor(Math.random() * facts.length)]);
     console.log("Website created by Juliane Rebecca S. Dayandante and Jethro J. Manzanillo");
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.creator-card, .character-card');
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('visible');
+        }, 150 * index); 
+    });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
 });

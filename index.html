@@ -12,594 +12,103 @@
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
 </head>
 <body>
-   
+    <!-- Scroll Texture and Parchment Overlay -->
     <div class="scroll-texture"></div>
     <div class="parchment-overlay"></div>
     <div class="ink-blot ink-1"></div>
     <div class="ink-blot ink-2"></div>
-    
-    <!-- Main Navigation -->
+
+    <!-- Navigation -->
     <nav class="ancient-nav">
         <div class="nav-container">
             <div class="nav-brand">
-                <i class="fas fa-scroll"></i>
-                <h1>Final Project</h1>
-                <span class="subtitle">Great Books</span>
+                <i class="fas fa-book"></i>
+                <h1>Phaedra Archive</h1>
+                <div class="subtitle">Ancient Tomes & Mysteries</div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#" class="nav-link active" data-target="home">Home</a></li>
-                <li><a href="#" class="nav-link" data-target="analysis">Analysis</a></li>
-                <li><a href="#" class="nav-link" data-target="characters">Characters</a></li>
-                <li><a href="#" class="nav-link" data-target="themes">Themes</a></li>
-                <li><a href="#" class="nav-link" data-target="creators">Creators</a></li>
-            </ul>
             <div class="nav-actions">
-                <button class="btn-wax-seal" id="toggleTheme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="btn-wax-seal" id="playAudio">
-                    <i class="fas fa-volume-up"></i>
+                <button class="btn-wax-seal" onclick="scrollToContent()">
+                    <i class="fas fa-scroll"></i>
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content Container -->
-    <main class="ancient-container">
-        <!-- Home Section -->
-        <section id="home" class="content-section active">
-            <div class="section-header">
-                <div class="wax-seal">
-                    <span>P</span>
-                </div>
-                <h2><span class="first-letter">P</span>haedra</h2>
-                <p class="section-subtitle">A Tragedy by Jean Racine (1677)</p>
-            </div>
-            
-            <div class="ancient-card">
-                <div class="card-header">
-                    <h3><i class="fas fa-theater-masks"></i> The Tragic Tale</h3>
-                    <span class="date-badge">1677 CE</span>
-                </div>
-                <div class="card-body">
-                    <div class="card-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-crown"></i>
-                            <p>Phaedra's Tragedy</p>
-                        </div>
-                        <div class="image-caption">A neoclassical depiction of Phaedra's confession</div>
-                    </div>
-                    <div class="card-text">
-                        <p><span class="dropcap">P</span>haedra, also known as <em>Phèdre</em>, is a French dramatic tragedy in five acts written in alexandrine verse by Jean Racine, first performed in 1677 at the Hôtel de Bourgogne in Paris.</p>
-                        <p>The play is based on the mythological story of Phaedra, wife of King Theseus of Athens, and her forbidden love for her stepson Hippolytus. Racine's adaptation emphasizes the psychological turmoil and moral conflict of its characters, adhering to the classical unities of time, place, and action.</p>
-                        <p>Racine's work is considered one of the masterpieces of French classical theater, showcasing his mastery of language, psychological depth, and tragic form.</p>
-                        
-                        <div class="key-facts">
-                            <h4><i class="fas fa-key"></i> Key Facts</h4>
-                            <ul>
-                                <li><strong>Author:</strong> Jean Racine</li>
-                                <li><strong>Genre:</strong> Tragédie classique</li>
-                                <li><strong>First Performance:</strong> 1677</li>
-                                <li><strong>Setting:</strong> Troezen, Peloponnese</li>
-                                <li><strong>Verse Form:</strong> Alexandrine</li>
-                                <li><strong>Source:</strong> Euripides' Hippolytus</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <button class="btn-ancient" id="exploreBtn">Explore the Tragedy <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart-broken"></i>
-                    </div>
-                    <h4>Forbidden Love</h4>
-                    <p>Phaedra's illicit passion for her stepson Hippolytus drives the tragic narrative.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <h4>Moral Conflict</h4>
-                    <p>The struggle between passion, reason, and duty defines each character's fate.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-fort-awesome"></i>
-                    </div>
-                    <h4>Classical Unity</h4>
-                    <p>The play strictly follows the Aristotelian unities of time, place, and action.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-book-dead"></i>
-                    </div>
-                    <h4>Tragic Fate</h4>
-                    <p>Characters are ensnared by fate, leading to inevitable suffering and death.</p>
-                </div>
-            </div>
-        </section>
+   <!-- Hero Section -->
+<section class="ancient-container" style="text-align:center; margin-top:6rem;">
+    <h1 class="section-header">Welcome to the Phaedra Archive</h1>
+     <div class="wax-seal"><span>✦</span></div>
 
-        <!-- Literary Analysis Section -->
-        <section id="analysis" class="content-section">
-            <div class="section-header">
-                <div class="wax-seal">
-                    <span>A</span>
-                </div>
-                <h2><span class="first-letter">L</span>iterary Analysis</h2>
-                <p class="section-subtitle">Examining Racine's Masterpiece</p>
-            </div>
-            
-            <div class="ancient-card">
-                <div class="card-header">
-                    <h3><i class="fas fa-feather-alt"></i> Structure & Form</h3>
-                </div>
-                <div class="card-body">
-                    <p><span class="dropcap">R</span>acine's <em>Phaedra</em> exemplifies French classical tragedy, adhering strictly to the rules established by 17th-century French dramaturgy. The play consists of five acts, maintains the three unities, and employs alexandrine verse (twelve-syllable lines with a caesura).</p>
-                    
-                    <div class="analysis-grid">
-                        <div class="analysis-item">
-                            <h4><i class="fas fa-hourglass"></i> Unity of Time</h4>
-                            <p>The entire action takes place within 24 hours, creating intense dramatic pressure.</p>
-                        </div>
-                        <div class="analysis-item">
-                            <h4><i class="fas fa-map-marker-alt"></i> Unity of Place</h4>
-                            <p>All events occur in the royal palace at Troezen, emphasizing the claustrophobic atmosphere.</p>
-                        </div>
-                        <div class="analysis-item">
-                            <h4><i class="fas fa-project-diagram"></i> Unity of Action</h4>
-                            <p>A single plotline focuses exclusively on Phaedra's forbidden passion and its consequences.</p>
-                        </div>
-                    </div>
-                    
-                    <h4 class="analysis-subheader"><i class="fas fa-language"></i> Language & Verse</h4>
-                    <p>Racine's alexandrine verse is renowned for its elegance, rhythmic precision, and emotional intensity. The constrained form paradoxically allows for profound psychological exploration. Key speeches, such as Phaedra's confession to Oenone (Act I, Scene 3) and her declaration of love to Hippolytus (Act II, Scene 5), showcase Racine's mastery of rhetorical devices and emotional expression.</p>
-                    
-                    <div class="quote-box">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p class="quote">"My wound is older. I was struck by love<br>For Theseus' son, the youthful conqueror.<br>I saw him, and I blushed; I paled to see him;<br>A sudden turmoil troubled all my senses."</p>
-                        <p class="quote-source">— Phaedra, Act I, Scene 3 (translated by R.C. Knight)</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="ancient-card">
-                <div class="card-header">
-                    <h3><i class="fas fa-brain"></i> Psychological Depth</h3>
-                </div>
-                <div class="card-body">
-                    <p><span class="dropcap">R</span>acine's genius lies in his exploration of the human psyche. Phaedra is not simply a woman consumed by illicit desire but a complex character torn between passion and reason, moral conscience and overwhelming emotion.</p>
-                    
-                    <div class="character-insight">
-                        <h4>Phaedra's Internal Conflict</h4>
-                        <div class="conflict-meter">
-                            <div class="meter-label">Passion</div>
-                            <div class="meter-bar">
-                                <div class="meter-fill passion-fill"></div>
-                            </div>
-                            <div class="meter-label">Reason</div>
-                        </div>
-                        <p>Throughout the play, Phaedra struggles with guilt, shame, and self-loathing, making her one of literature's most psychologically complex tragic heroines.</p>
-                    </div>
-                    
-                    <h4 class="analysis-subheader"><i class="fas fa-chart-line"></i> Tragic Structure</h4>
-                    <p>The play follows Aristotle's principles of tragedy, featuring:</p>
-                    <ul class="ancient-list">
-                        <li><strong>Hamartia:</strong> Phaedra's tragic flaw is her uncontrollable passion</li>
-                        <li><strong>Peripeteia:</strong> The reversal when Theseus returns, alive</li>
-                        <li><strong>Anagnorisis:</strong> Phaedra's recognition of her guilt before suicide</li>
-                        <li><strong>Catharsis:</strong> The audience's purgation of pity and fear</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <p class="section-subtitle">Explore the mysteries of ancient knowledge, artifacts, and stories preserved through time.</p>
+    
+    <a href="content.html" class="btn-ancient no-underline">
+        View Contents <i class="fas fa-book-open"></i>
+    </a>
+</section>
 
-        <!-- Characters Section -->
-        <section id="characters" class="content-section">
-            <div class="section-header">
-                <div class="wax-seal">
-                    <span>C</span>
-                </div>
-                <h2><span class="first-letter">D</span>ramatis Personae</h2>
-                <p class="section-subtitle">The Tragic Figures of Phaedra</p>
-            </div>
-            
-            <div class="characters-container">
-                <div class="character-card" data-character="phaedra">
-                    <div class="character-portrait">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <div class="character-info">
-                        <h3>Phaedra</h3>
-                        <p class="character-role">Wife of Theseus</p>
-                        <p class="character-desc">Daughter of King Minos, consumed by forbidden love for her stepson Hippolytus. Torn between passion and honor.</p>
-                        <div class="character-traits">
-                            <span class="trait">Passionate</span>
-                            <span class="trait">Guilt-Ridden</span>
-                            <span class="trait">Tragic</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="character-card" data-character="hippolytus">
-                    <div class="character-portrait">
-                        <i class="fas fa-horse"></i>
-                    </div>
-                    <div class="character-info">
-                        <h3>Hippolytus</h3>
-                        <p class="character-role">Son of Theseus</p>
-                        <p class="character-desc">Chaste hunter devoted to Artemis, repulsed by Phaedra's advances. In love with Aricia against his father's wishes.</p>
-                        <div class="character-traits">
-                            <span class="trait">Chaste</span>
-                            <span class="trait">Honorable</span>
-                            <span class="trait">Doomed</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="character-card" data-character="theseus">
-                    <div class="character-portrait">
-                        <i class="fas fa-king"></i>
-                    </div>
-                    <div class="character-info">
-                        <h3>Theseus</h3>
-                        <p class="character-role">King of Athens</p>
-                        <p class="character-desc">Believed dead, returns to find his wife in love with his son. His rash curse brings about Hippolytus's death.</p>
-                        <div class="character-traits">
-                            <span class="trait">Authoritative</span>
-                            <span class="trait">Impulsive</span>
-                            <span class="trait">Grieving</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="character-card" data-character="aricia">
-                    <div class="character-portrait">
-                        <i class="fas fa-dove"></i>
-                    </div>
-                    <div class="character-info">
-                        <h3>Aricia</h3>
-                        <p class="character-role">Princess of Athens</p>
-                        <p class="character-desc">Last descendant of a rival line to Theseus. Forbidden to marry but loved by Hippolytus.</p>
-                        <div class="character-traits">
-                            <span class="trait">Forbidden</span>
-                            <span class="trait">Loving</span>
-                            <span class="trait">Noble</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="character-card" data-character="oenone">
-                    <div class="character-portrait">
-                        <i class="fas fa-user-nurse"></i>
-                    </div>
-                    <div class="character-info">
-                        <h3>Oenone</h3>
-                        <p class="character-role">Phaedra's Nurse</p>
-                        <p class="character-desc">Phaedra's confidante who encourages her to confess her love to Hippolytus, then falsely accuses him.</p>
-                        <div class="character-traits">
-                            <span class="trait">Loyal</span>
-                            <span class="trait">Devious</span>
-                            <span class="trait">Desperate</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="character-card" data-character="theramenes">
-                    <div class="character-portrait">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="character-info">
-                        <h3>Theramenes</h3>
-                        <p class="character-role">Hippolytus's Tutor</p>
-                        <p class="character-desc">Hippolytus's confidant who brings news of Theseus's return and later describes Hippolytus's death.</p>
-                        <div class="character-traits">
-                            <span class="trait">Loyal</span>
-                            <span class="trait">Wise</span>
-                            <span class="trait">Narrator</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="character-details" id="characterDetails">
-                <h3>Select a character to view detailed analysis</h3>
-                <p>Click on any character card above to explore their role, motivations, and significance in the tragedy.</p>
-            </div>
-        </section>
 
-        <!-- Themes Section -->
-        <section id="themes" class="content-section">
-            <div class="section-header">
-                <div class="wax-seal">
-                    <span>T</span>
-                </div>
-                <h2><span class="first-letter">T</span>hemes & Motifs</h2>
-                <p class="section-subtitle">Philosophical Underpinnings of the Tragedy</p>
-            </div>
-            
-            <div class="themes-container">
-                <div class="theme-card">
-                    <div class="theme-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h3>Forbidden Passion</h3>
-                    <p>The destructive power of illicit desire, particularly Phaedra's incestuous love for her stepson, which violates social and moral codes.</p>
-                    <div class="theme-quote">
-                        "Venus I feel in all my fever'd frame" — Phaedra
-                    </div>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">
-                        <i class="fas fa-scale-balanced"></i>
-                    </div>
-                    <h3>Reason vs. Passion</h3>
-                    <p>The Jansenist conflict between human will and divine grace, reason and emotion, which Racine explores through his characters' struggles.</p>
-                    <div class="theme-quote">
-                        "I have deserved it all" — Phaedra
-                    </div>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Divine Intervention</h3>
-                    <p>The role of gods (Venus, Neptune) in determining human fate, reflecting both Greek mythology and Jansenist ideas of predestination.</p>
-                    <div class="theme-quote">
-                        "Neptune has sworn, and he will keep his oath" — Theseus
-                    </div>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">
-                        <i class="fas fa-mask"></i>
-                    </div>
-                    <h3>Appearance vs. Reality</h3>
-                    <p>The contrast between public reputation and private truth, exemplified by Phaedra's false accusation against Hippolytus.</p>
-                    <div class="theme-quote">
-                        "My hands, trained not to punish innocence" — Hippolytus
-                    </div>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">
-                        <i class="fas fa-skull-crossbones"></i>
-                    </div>
-                    <h3>Death & Fate</h3>
-                    <p>The inevitability of tragic destiny, inherited guilt (Phaedra's family curse), and the inescapable nature of divine punishment.</p>
-                    <div class="theme-quote">
-                        "The die is cast, and I must follow fate" — Phaedra
-                    </div>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">
-                        <i class="fas fa-landmark"></i>
-                    </div>
-                    <h3>Royal Power & Duty</h3>
-                    <p>The burdens of monarchy, family obligations, and the conflict between personal desire and public responsibility.</p>
-                    <div class="theme-quote">
-                        "A king's commands are justified by all" — Theseus
-                    </div>
-                </div>
-            </div>
-            
-            <div class="ancient-card">
-                <div class="card-header">
-                    <h3><i class="fas fa-book-open"></i> Philosophical Context</h3>
-                </div>
-                <div class="card-body">
-                    <p><span class="dropcap">R</span>acine's <em>Phaedra</em> reflects the Jansenist theology that influenced the playwright during his education at Port-Royal. Jansenism emphasized original sin, human depravity, and the necessity of divine grace for salvation—themes mirrored in Phaedra's helplessness against her passion.</p>
-                    
-                    <div class="philosophy-grid">
-                        <div class="philosophy-item">
-                            <h4>Jansenist Influence</h4>
-                            <p>The tragedy illustrates the Jansenist belief that humans are powerless without God's grace, as Phaedra struggles helplessly against her sinful desires.</p>
-                        </div>
-                        <div class="philosophy-item">
-                            <h4>Neoclassical Aesthetics</h4>
-                            <p>Racine adheres to the French classical ideal of "plaire et instruire" (to please and instruct), balancing emotional intensity with moral instruction.</p>
-                        </div>
-                        <div class="philosophy-item">
-                            <h4>Greek Heritage</h4>
-                            <p>While adapting Euripides, Racine adds psychological depth and moral complexity, transforming the ancient myth for 17th-century audiences.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Navigation wax-seal button -->
+<div class="nav-actions">
+    <a href="content.html" class="btn-wax-seal">
+        <i class="fas fa-scroll"></i>
+    </a>
+</div>
 
-        <!-- Creators Section -->
-        <section id="creators" class="content-section">
-            <div class="section-header">
-                <div class="wax-seal">
-                    <span>C</span>
-                </div>
-                <h2><span class="first-letter">C</span>reators</h2>
-                <p class="section-subtitle">Website Developers & Project Information</p>
+    <!-- Main Content -->
+    <div id="mainContent" class="ancient-container">
+        <h2 class="section-header">Archive Contents</h2>
+
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon"><i class="fas fa-scroll"></i></div>
+                <h4>Ancient Scrolls</h4>
+                <p>Discover scrolls filled with forgotten knowledge and secrets of old civilizations.</p>
             </div>
-            
-            <div class="creators-container">
-                <div class="creator-card">
-                    <div class="creator-portrait">
-                        <div class="portrait-circle">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                    </div>
-                    <div class="creator-info">
-                        <h3>Juliane Rebecca S. Dayandante</h3>
-                        <p class="creator-role">Lead Developer & Literary Analyst</p>
-                        <div class="creator-details">
-                            <p><strong>Responsibilities:</strong></p>
-                            <ul>
-                                <li>Website architecture and structure</li>
-                                <li>Literary content development</li>
-                                <li>Thematic analysis of Phaedra</li>
-                                <li>Character study and interpretation</li>
-                            </ul>
-                            <p><strong>Academic Focus:</strong> French Classical Literature, 17th Century Tragedy, Racinian Studies</p>
-                            <p><strong>Favorite Quote:</strong> "My wound is older. I was struck by love for Theseus' son." - Phaedra, Act I</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="creator-card">
-                    <div class="creator-portrait">
-                        <div class="portrait-circle">
-                            <i class="fas fa-code"></i>
-                        </div>
-                    </div>
-                    <div class="creator-info">
-                        <h3>Jethro J. Manzanillo</h3>
-                        <p class="creator-role">Technical Developer & UI/UX Designer</p>
-                        <div class="creator-details">
-                            <p><strong>Responsibilities:</strong></p>
-                            <ul>
-                                <li>HTML/CSS/JavaScript implementation</li>
-                                <li>Ancient aesthetic design system</li>
-                                <li>Interactive functionality</li>
-                                <li>Responsive layout and animations</li>
-                            </ul>
-                            <p><strong>Technical Skills:</strong> Frontend Development, CSS Animation, Responsive Design, User Experience</p>
-                            <p><strong>Design Philosophy:</strong> "Creating digital experiences that feel like ancient manuscripts brought to life."</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="feature">
+                <div class="feature-icon"><i class="fas fa-feather"></i></div>
+                <h4>Manuscripts</h4>
+                <p>Delve into manuscripts with tales of heroes, magic, and historical chronicles.</p>
             </div>
-            
-            <div class="ancient-card">
-                <div class="card-header">
-                    <h3><i class="fas fa-info-circle"></i> Project Information</h3>
-                </div>
-                <div class="card-body">
-                    <div class="project-details">
-                        <h4>About This Project</h4>
-                        <p>This website was created as a final project for Great Books subject, combining literary analysis with web development skills. The project demonstrates understanding of Jean Racine's <em>Phaedra</em> through an interactive digital presentation.</p>
-                        
-                        <div class="project-facts">
-                            <div class="project-fact">
-                                <h5><i class="fas fa-calendar"></i> Project Timeline</h5>
-                                <p>Development: 2 weeks</p>
-                                <p>Research: 1 week</p>
-                                <p>Testing & Refinement: 3 days</p>
-                            </div>
-                            <div class="project-fact">
-                                <h5><i class="fas fa-cogs"></i> Technologies Used</h5>
-                                <p>HTML5, CSS3, JavaScript</p>
-                                <p>Google Fonts, Font Awesome</p>
-                                <p>Git & GitHub for version control</p>
-                            </div>
-                            <div class="project-fact">
-                                <h5><i class="fas fa-graduation-cap"></i> Learning Outcomes</h5>
-                                <p>Literary analysis presentation</p>
-                                <p>Web development application</p>
-                                <p>Creative digital storytelling</p>
-                            </div>
-                        </div>
-                        
-                        <h4>Project Goals</h4>
-                        <ul class="project-goals">
-                            <li>Create an engaging digital platform for literary analysis</li>
-                            <li>Demonstrate understanding of Racine's Phaedra</li>
-                            <li>Showcase web development skills with an ancient aesthetic</li>
-                            <li>Provide an interactive learning experience for users</li>
-                            <li>Combine academic rigor with creative presentation</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="feature">
+                <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                <h4>Artifacts</h4>
+                <p>Explore artifacts with intricate designs, revealing the craftsmanship of ancient times.</p>
             </div>
-            
-            <div class="ancient-card">
-                <div class="card-header">
-                    <h3><i class="fas fa-share-alt"></i> Connect & Resources</h3>
-                </div>
-                <div class="card-body">
-                    <div class="resources-grid">
-                        <div class="resource-item">
-                            <h4><i class="fab fa-github"></i> Source Code</h4>
-                            <p>This project is hosted on GitHub. You can view the complete source code, suggest improvements, or use it as a template for similar projects.</p>
-                            <button class="btn-ancient small" id="githubBtn">View on GitHub</button>
-                        </div>
-                        <div class="resource-item">
-                            <h4><i class="fas fa-book"></i> Further Reading</h4>
-                            <p>For deeper understanding of Racine's Phaedra:</p>
-                            <ul>
-                                <li>Racine: Complete Plays (Vol. 1)</li>
-                                <li>The Cambridge Companion to Racine</li>
-                                <li>French Tragedy: The Power of Enunciation</li>
-                            </ul>
-                        </div>
-                        <div class="resource-item">
-                            <h4><i class="fas fa-award"></i> Project Criteria</h4>
-                            <p>This project meets the following criteria:</p>
-                            <ul>
-                                <li><strong>Content (50%):</strong> Comprehensive analysis of Phaedra</li>
-                                <li><strong>Creativity (25%):</strong> Unique ancient manuscript design</li>
-                                <li><strong>Innovation (25%):</strong> Interactive literary database</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        </div>
+
+        <div class="analysis-grid">
+            <div class="analysis-item">
+                <h4>Historical Context</h4>
+                <p>Understand the era in which each artifact or document was created, its significance, and legacy.</p>
             </div>
-        </section>
-    </main>
+            <div class="analysis-item">
+                <h4>Preservation</h4>
+                <p>Learn about preservation methods to protect ancient knowledge for future generations.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="ancient-footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3><i class="fas fa-university"></i> Classical Archives</h3>
-                <p>A digital repository for the study of classical French tragedy.</p>
-                <p>Created by Juliane Rebecca S. Dayandante & Jethro J. Manzanillo</p>
-                <p>Final Project for Great Books</p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#" data-target="home">Home</a></li>
-                    <li><a href="#" data-target="analysis">Analysis</a></li>
-                    <li><a href="#" data-target="characters">Characters</a></li>
-                    <li><a href="#" data-target="themes">Themes</a></li>
-                    <li><a href="#" data-target="creators">Creators</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Project Information</h4>
-                <ul class="footer-links">
-                    <li><strong>Course:</strong> Information Technology</li>
-                    <li><strong>Project:</strong> Phaedra Digital Archive</li>
-                    <li><strong>Date:</strong> December 2025</li>
-                    <li><strong>Option:</strong> B - Blog Developer Website</li>
-                </ul>
+                <h3>About Phaedra Archive</h3>
+                <p>A digital library preserving ancient tomes and mystical artifacts for enthusiasts and researchers.</p>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>&copy; 2025 Great Books Project.</p>
-            <div class="footer-actions">
-                <button class="btn-wax-seal small" id="viewSource">
-                    <i class="fab fa-github"></i> View Source
-                </button>
-                <button class="btn-wax-seal small" id="printPage">
-                    <i class="fas fa-print"></i> Print
-                </button>
-            </div>
+            <p>&copy; 2025 Phaedra Archive. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Audio Element -->
-    <audio id="ambientAudio" loop>
-        <source src="https://assets.mixkit.co/music/preview/mixkit-medieval-show-fanfare-announcement-226.mp3" type="audio/mpeg">
-    </audio>
-
-    <script src="phaedra.js"></script>
+    <!-- JavaScript -->
+    <script>
+        function scrollToContent() {
+            document.getElementById("mainContent").scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    </script>
 </body>
 </html>
